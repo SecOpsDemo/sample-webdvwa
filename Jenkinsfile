@@ -57,9 +57,9 @@ podTemplate(label: label, containers: [
         container("builder") {
           try {
             butler.deploy("here", "${SERVICE_GROUP}", "${IMAGE_NAME}", "dev")
-            butler.success(SLACK_TOKEN_HERE, "Deploy HERE")
+            butler.success(SLACK_TOKEN_DEV, "Deploy HERE")
           } catch (e) {
-            butler.failure(SLACK_TOKEN_HERE, "Deploy HERE")
+            butler.failure(SLACK_TOKEN_DEV, "Deploy HERE")
             throw e
           }
         }
