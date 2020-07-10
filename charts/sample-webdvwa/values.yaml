@@ -7,9 +7,8 @@ profile: default
 namespace: default
 
 image:
-  repository: docker-registry.127.0.0.1.nip.io:30500/sample-webdvwa
+  repository: vulnerables/web-dvwa
   tag: latest
-  pullPolicy: Always
 
 dockerRegistrySecret: regcred
 
